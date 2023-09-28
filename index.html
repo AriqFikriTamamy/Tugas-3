@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <form name="barang" onSubmit="event.preventDefault();onFormSubmit();">
+                    <div>
+                        <label for="namaBarang">Nama Barang</label>
+                        <label for="goods-validation" class="hide" id="goods-validation">Wajib
+                            diisi</label>
+                        <input type="text" name="namaBarang" id="namaBarang">
+                    </div>
+                    <div>
+                        <label for="jumlah">Jumlah</label>
+                        <input type="text" name="jumlah" id="jumlah">
+                    </div>
+                    <div>
+                        <label for="harga">Harga</label>
+                        <input type="text" name="harga" id="harga">
+                    </div>
+                    <div>
+                        <label for="diskon">Diskon</label>
+                        <input type="text" name="diskon" id="diskon">
+                    </div>
+                    <div class="form-button">
+                        <input type="submit" value="Hitung" name="invoice" id="invoice">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="goods-list">
+                    <thead>
+                        <tr>
+                            <th>Nama Barang</th>
+                            <th>Jumlah</th>
+                            <th>Harga</th>
+                            <th>Diskon (persen)</th>
+                            <th id="total">Total</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+                <br>
+                <div>
+                    <button type="submit" id="bayar">Bayar</button>
+                </div>
+            </td>
+        </tr>
+        <tr>
+
+        </tr>
+    </table>
+    <script src="index.js"></script>
+    <!-- <label for="">Nama Barang</label>
+    <input type="text">
+    <label for="">Jumlah</label>
+    <input type="number">
+    <label for="">Harga</label>
+    <input type="number" name="" id="">
+    <br><br>
+    <button type="submit">Hitung</button> -->
+</body>
+
+</html>
